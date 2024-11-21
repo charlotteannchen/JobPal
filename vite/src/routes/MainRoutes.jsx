@@ -19,6 +19,8 @@ const SamplePage = Loadable(lazy(() => import('views/sample-page')));
 const ProfilePage = Loadable(lazy(() => import('views/profile-page')));
 const JobPage = Loadable(lazy(() => import('views/job-page')));
 const SkillPage = Loadable(lazy(() => import('views/skill-page')));
+const Job1 = Loadable(lazy(() => import('views/job-page/job1')));
+const Job3 = Loadable(lazy(() => import('views/job-page/job3')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -99,6 +101,14 @@ const MainRoutes = {
     {
       path: 'skill-page',
       element: <SkillPage />
+    }, 
+    {
+      path: 'job-page/job1',
+      element: <Job1 />
+    }, 
+    {
+      path: 'job-page/job3',
+      element: <Job3 />
     }
   ]
 };

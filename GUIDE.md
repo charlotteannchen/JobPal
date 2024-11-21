@@ -1,4 +1,4 @@
-Run project:
+# Run project:
 1. enter vite directory
 2. run: `yarn start`
 
@@ -17,3 +17,11 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx update-browserslist-db@latest
   Why you should do it regularly: https://github.com/browserslist/update-db#readme
  ```
+
+# Modify icons
+vite/node_modules/@tabler/icons-react/dist/tabler-icons-react.d.ts
+
+# Setting you need to modify to add a new page 
+1. vite/src/routes/MainRoutes.jsx
+2. vite/src/menu-items/other.js
+3. 
