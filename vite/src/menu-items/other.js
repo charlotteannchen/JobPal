@@ -1,8 +1,8 @@
 // assets
-import { IconBrandChrome, IconHelp } from '@tabler/icons-react';
+import { IconBrandChrome, IconBriefcase, IconHelp, IconTool, IconUserSquareRounded } from '@tabler/icons-react';
 
 // constant
-const icons = { IconBrandChrome, IconHelp };
+const icons = { IconBrandChrome, IconHelp, IconUserSquareRounded, IconBriefcase, IconTool };
 
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
 
@@ -11,22 +11,29 @@ const other = {
   type: 'group',
   children: [
     {
-      id: 'sample-page',
-      title: 'Sample Page',
+      id: 'profile-page',
+      title: 'Profile',
       type: 'item',
-      url: '/sample-page',
-      icon: icons.IconBrandChrome,
+      url: '/profile-page',
+      icon: icons.IconUserSquareRounded,
       breadcrumbs: false
     },
     {
-      id: 'documentation',
-      title: 'Documentation',
+      id: 'job-page',
+      title: 'Job',
       type: 'item',
-      url: 'https://codedthemes.gitbook.io/berry/',
-      icon: icons.IconHelp,
-      external: true,
-      target: true
-    }
+      url: '/job-page',
+      icon: icons.IconBriefcase,
+      breadcrumbs: false
+    },
+    {
+      id: 'skill-page',
+      title: 'Skill',
+      type: 'item',
+      url: '/skill-page',
+      icon: icons.IconTool,
+      breadcrumbs: false
+    },
   ]
 };
 
