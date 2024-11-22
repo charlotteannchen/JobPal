@@ -1,8 +1,15 @@
 // assets
+<<<<<<< HEAD
 import { IconUserSquareRounded, IconBriefcase, IconTool,  IconBooks } from '@tabler/icons-react';
 
 // constant
 const icons = { IconUserSquareRounded, IconBriefcase, IconTool,  IconBooks };
+=======
+import { IconBrandChrome, IconBriefcase, IconHelp, IconTool, IconUserSquareRounded } from '@tabler/icons-react';
+
+// constant
+const icons = { IconBrandChrome, IconHelp, IconUserSquareRounded, IconBriefcase, IconTool };
+>>>>>>> d22d5bc (Modify icons in other.js.)
 
 // ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
 
