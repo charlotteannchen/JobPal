@@ -9,9 +9,9 @@ import App from './App';
 import reducer from './store/reducer';
 
 // google-fonts
+import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/700.css';
 
 import '@fontsource/inter/400.css';
@@ -27,16 +27,20 @@ import '@fontsource/poppins/700.css';
 // style + assets
 import 'assets/scss/style.scss';
 import reportWebVitals from 'reportWebVitals';
+import { FirebaseProvider } from './contexts/FirebaseContext';
 
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
 const store = configureStore({ reducer });
 
+
 // ==============================|| REACT DOM RENDER  ||============================== //
 
 root.render(
   <Provider store={store}>
-    <App />
+    <FirebaseProvider>
+      <App />
+    </FirebaseProvider>
   </Provider>
 );
 
