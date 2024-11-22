@@ -1,0 +1,33 @@
+1. 初始化后端
+用 Express.js 创建一个简单的后端：
+
+bash
+複製程式碼
+mkdir backend
+cd backend
+npm init -y
+npm install express body-parser cors
+
+2. 创建后端代码
+创建一个 server.js 文件
+
+3. 运行后端
+node server.js
+
+测试登录功能
+启动前端 (npm run dev) 和后端 (node server.js)。
+打开浏览器访问 http://localhost:5173。
+使用以下账号登录测试：
+Email: user@example.com
+Password: password123
+如果输入错误的账号或密码，将看到错误提示。
+扩展功能
+状态管理： 使用 Redux 或 Context API 管理用户登录状态。
+Token Authentication： 后端可以返回 JWT，前端存储在 Local Storage 或 HttpOnly Cookie 中。
+样式优化： 使用 Tailwind CSS、Material-UI 或其他样式库。
+这样，完整的登录功能就实现了！
+
+redux
+在src/store/customizationReducer增加skillID
+在action增加
+export const SET_SKILL_ID = 'SET_SKILL_ID'; // 新增的动作类型

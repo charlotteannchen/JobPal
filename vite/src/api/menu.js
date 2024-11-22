@@ -73,3 +73,17 @@ export function handlerActiveItem(openedItem) {
     false // 不會觸發重新抓取資料
   );
 }
+
+export const fetchUsers = async () => {
+  const response = await fetch(`${API_BASE_URL}/users`);
+  return response.json();
+};
+
+export const addUser = async (user) => {
+  const response = await fetch(`${API_BASE_URL}/users`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(user),
+  });
+  return response.json();
+};

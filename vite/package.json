@@ -1,12 +1,13 @@
 {
-  "name": "berry-free-material-react",
-  "version": "3.5.0",
+  "name": "JobPal",
+  "version": "1.0.0",
   "private": true,
   "author": {
     "name": "CodedThemes",
     "email": "CodedThemes@gmail.com",
     "url": "https://codedthemes.com/"
   },
+  "type": "module",
   "homepage": "https://berrydashboard.io/free",
   "scripts": {
     "start": "env-cmd -f .env vite",
